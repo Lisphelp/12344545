@@ -380,4 +380,6 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EdgeIY/infinitey
 
     local Credits = Window:NewTab("Credits")
     local CreditSection = Credits:NewSection("Credits")
-    CreditSection:NewLabel("Ping for the a60 idea Cryobyte for a-200 idea  all the coding was done by me and firebrand created by ashleyishe. please tell me if you want me to add other stuff to the config as i will")
+    CreditSection:NewLabel("Ping for the a60 idea Cryobyte for a-200 idea
+    all the coding was done by me and firebrand created by ashleyishe.
+    please tell me if you want me to add other stuff to the config")

@@ -1,4 +1,4 @@
--- added a-60 and firebrand (Credits soon)
+-- added a lot of stuff
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Entity spawner", "Midnight")
 
@@ -6,34 +6,34 @@ local Window = Library.CreateLib("Entity spawner", "Midnight")
 local Main = Window:NewTab("Spawning_Custom")
 local MainSection = Main:NewSection("Custom")
 
-local Mainsection:NewButton("Spawn firebrand", "Spawns firebrand", function()
-    while true do
-        
-        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
-    
-        local entity = Creator.createEntity({
-            Model = "https://github.com/fnaclol/sussy-bois/raw/main/FireBrand3.rbxm",
-            Speed = 400,
-            DelayTime = 2,
-            HeightOffset = 0,
-            CanKill = false,
-            BreakLights = false,
-            FlickerLights = {
-                false,
-                1,
-            },
-            Cycles = {
-                Min = 2,
-                Max = 2,
-                WaitTime = 2,
-            },
-            CamShake = {
-                true,
-                {5, 15, 0.1, 1},
-                100,
-            },
-    
-        Creator.runEntity(entity)
+MainSection:NewButton("Spawn firebrand", "Spawns firebrand lol", function()
+    wait(1)
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+    local entity = Creator.createEntity({
+        Model = "https://github.com/fnaclol/sussy-bois/raw/main/FireBrand3.rbxm",
+        Speed = 400,
+        DelayTime = 2,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = false,
+        FlickerLights = {
+            false,
+            1,
+        },
+        Cycles = {
+            Min = 2,
+            Max = 2,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {5, 15, 0.1, 1},
+            100,
+        },
+    })
+
+    Creator.runEntity(entity)
 end)
 
 MainSection:NewButton("Spawn Bacon", "Spawns Bacon", function()
@@ -210,7 +210,8 @@ local entity = Creator.createEntity({
 Creator.runEntity(entity)
 end)
 
-local RoomSection = Main:NewSection("Rooms")
+RoomSection = Main:NewSection("Rooms")
+
 RoomSection:NewButton("Spawn A-200", "Spawns A-200", function()
 wait(2)
  local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
@@ -376,3 +377,7 @@ end)
 OtherSection:NewButton("Inf yield", "INF YIELD BABYYY", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()  
     end)
+
+    local Credits = Window:NewTab("Credits")
+    local CreditSection = Credits:NewSection("Credits")
+    CreditSection:NewLabel("Ping for the a60 idea Cryobyte for a-200 idea  all the coding was done by me and firebrand created by ashleyishe. please tell me if you want me to add other stuff to the config as i will")

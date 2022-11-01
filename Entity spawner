@@ -383,5 +383,6 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EdgeIY/infinitey
     CreditSection:NewLabel("Ping for the a60")
     CreditSection:NewLabel("all the coding was done by me")
     CreditSection:NewLabel("firebrand created by ashleyishe.")
-    CreditSection:NewLabel("please tell me if you want me to add other stuff to the config")
+    CreditSection:NewLabel("ask me to add new stuff to the config")
+    CreditSection:NewLabel("discord to ask me is Baconhairguy#7436")
     
